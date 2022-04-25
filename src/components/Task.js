@@ -42,7 +42,7 @@ class Task extends Component { // esta class hereda caracteristicas de un compo 
             <input type="checkbox" onChange={this.props.checkDone.bind(this, task.id)} />
             <button style={btnDel} onClick={this.props.delTask.bind(this, task.id)}> x </button>
         </p>
-    }
+    } // método bind() crea una función, que cuando es llamada, asigna a su operador  this el valor entregado algo.bind(this, args)
 }
 // validar
 Task.propTypes = {
